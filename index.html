@@ -1,0 +1,572 @@
+
+
+        <!DOCTYPE html>
+        <html amp lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="canonical" href="https://vsoceria.click/">
+            
+
+            
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" type="text/css" />
+
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1,end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+
+    <style amp-custom>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        amp-carousel {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
+        body {
+            color: #fff;
+            background-color: #242529;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        p {
+            font-size: 15px;
+            margin: 0;
+            color: rgba(255,255,255, .8);
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::before {
+            content: '•';
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        summary::marker {
+            content: "";
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: left;
+        }
+
+            ul li::before {
+                font-family: 'FontAwesome';
+                margin-right: 5px;
+            }
+
+        .btn-play {
+            background-color: rgba(0,0,0,.8);
+            border-top: 1px solid #dee2e6;
+            color: rgba(255, 255, 255, 1);
+            padding: 1.5%;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+        .close {
+            background-color: transparent;
+            border-color: transparent;
+            flex-grow: 1;
+            width: -webkit-fill-available;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 15px;
+            margin-right: 15px;
+        }
+
+            .close i {
+                color: white;
+                font-size: 18px;
+            }
+
+        .container-hot-games {
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-top: 25px;
+        }
+
+            .container-hot-games .menu-hot-games a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+                .container-hot-games .menu-hot-games a .game {
+                    position: relative;
+                    background-color: #30353b;
+                    text-align: center;
+                    border: 2px solid rgba(255, 255, 255, .5);
+                    border-radius: 20px;
+                    width: 100%;
+                    height: 100%;
+                    margin: 0 auto;
+                    overflow: hidden
+                }
+
+                    .container-hot-games .menu-hot-games a .game amp-img {
+                        z-index: 1;
+                    }
+
+        .container-login-register {
+            display: flex;
+            justify-content: space-around;
+        }
+
+            .container-login-register a {
+                text-decoration: none;
+            }
+
+            .container-login-register .login-head-button {
+                padding: 15px 0;
+                width: 50%;
+                background-image: linear-gradient(to bottom,#6f481f 0%,#a68656 100%);
+            }
+
+            .container-login-register .register-head-button {
+                padding: 15px 0;
+                width: 50%;
+                background-image: linear-gradient(to bottom,#000 0%,#2c2c2c 100%);
+            }
+
+        .container-nav {
+            align-items: center;
+            background-image: linear-gradient(to bottom,#343a40 0%,#000 100%);
+            border-top: 1px solid #dee2e6;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            position: sticky;
+            text-align: center;
+            height: 70px;
+            width: 100%;
+            z-index: 3;
+        }
+
+            .container-nav .col {
+                display: flex;
+                flex-grow: 1;
+                height: 100%;
+                margin: 1% 0;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                border-right: 1px solid #313131;
+            }
+
+                .container-nav .col a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+        .container-section-top {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+            .container-section-top .container-menu-icon {
+                text-align: center;
+                padding: 10px 4%;
+                margin-bottom: 50px;
+            }
+
+                .container-section-top .container-menu-icon .menu-icon {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-gap: 5%;
+                }
+
+                    .container-section-top .container-menu-icon .menu-icon a {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+
+                        .container-section-top .container-menu-icon .menu-icon a .icon-item {
+                            text-align: center;
+                            height: 0;
+                            padding-top: 15%;
+                            padding-bottom: 25%;
+                            border-radius: 25%;
+                        }
+
+                            .container-section-top .container-menu-icon .menu-icon a .icon-item amp-img {
+                                width: 30px;
+                                height: 30px;
+                                margin: auto auto 1% auto;
+                            }
+
+        .container-top-menu {
+            background-image: linear-gradient(to bottom, #343a40 0%, #000 100%);
+            border-bottom: 1px solid #dee2e6;
+            position: fixed;
+            top: 0;
+            height: 76px;
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+            z-index: 3;
+        }
+
+            .container-top-menu amp-img {
+                height: 64px;
+                min-width: 60%;
+            }
+
+            .container-top-menu .logo {
+                height: 60px;
+                max-width: 300px;
+                object-fit: contain;
+                object-position: center;
+                margin: 1px auto;
+            }
+
+        .footer {
+            margin-top: 30px;
+            padding: 20px;
+            text-align: left;
+        }
+        
+        .main-wrapper {
+            height: calc(100% - 60px);
+            overflow-y: auto;
+            padding-top: 80px;
+            margin: 0 auto;
+            max-width: 1000px
+        }
+
+        .sidebar-menu {
+            position: absolute;
+            left: 0;
+            top: 18px;
+            background-color: transparent;
+            border-color: transparent;
+            font-size: 28px;
+            color: #fff;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
+        .title-hot-games {
+            padding: 0.25rem 0;
+            margin: 0.5rem;
+            font-weight: 700;
+            font-size: calc(1.1rem + .3vw);
+            background: linear-gradient(to bottom,#000 0%,#2c2c2c 100%);
+            color: #fff;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+    </style>
+
+            
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+        </head>
+        <body>
+            
+
+
+    <div>
+        <div class="container-top-menu">
+            <div class="logo">
+                <amp-img class="weblogo" src="https://sgalabel.blob.core.windows.net/agent-websites/139/medialibrary/images/139_d504f617520f43679ca65ad8ef36c721.png" alt="VSO777" width="64" height="64" layout="intrinsic"></amp-img>
+                <a href="https://t.ly/vso777">
+                    <button class="sidebar-menu"><i class="fas fa-bars"></i></button>
+                </a>
+            </div>
+        </div>
+        <div class="main-wrapper">
+            <div class="main-section">
+                <div class="container-section-top">
+                    <div class="container-slider">
+                        <amp-carousel width="2" height="1" layout="responsive" type="slides" role="region" autoplay delay="2000">
+                                <a href="https://t.ly/vso777">
+                                    <amp-img src="https://sgalabel.blob.core.windows.net/websites/medialibrary/images/e4e37434b5fd4d82aef3e442fc243abe.png" width="2" height="1" layout="responsive" alt="BANNER PRAGMATIC PLAY.png"></amp-img>
+                                </a>
+                                <a href="https://t.ly/vso777">
+                                    <amp-img src="https://sgalabel.blob.core.windows.net/websites/medialibrary/images/b7dde81e2ffb41588b3153d8a01d798a.png" width="2" height="1" layout="responsive" alt="zszssaaaa.png"></amp-img>
+                                </a>
+                                <a href="https://t.ly/vso777">
+                                    <amp-img src="https://sgalabel.blob.core.windows.net/websites/medialibrary/images/334232b25df5449293a1fd7167dc5df7.jpg" width="2" height="1" layout="responsive" alt="photo_2024-02-19_17-57-26.jpg"></amp-img>
+                                </a>
+                                <a href="https://t.ly/vso777">
+                                    <amp-img src="https://sgalabel.blob.core.windows.net/websites/medialibrary/images/adae844d556446c382b8472d2c18c23d.png" width="2" height="1" layout="responsive" alt="796x456.png"></amp-img>
+                                </a>
+                                  <a href="https://t.ly/vso777">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/139/medialibrary/images/139_4a875a86f4c94893a0a55b94e420c591.jpg" width="2" height="1" layout="responsive" alt="Image_20240301152727_11zon.jpg"></amp-img>
+                                </a>
+                                <a href="https://t.ly/vso777">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/139/medialibrary/images/139_29ab66521b1c425cbee5acb83a988471.jpg" width="2" height="1" layout="responsive" alt="1_9ffec1adbf3e48929abc918e49462b11_11zon.jpg"></amp-img>
+                                </a>
+                                <a href="https://t.ly/vso777">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/139/medialibrary/images/139_9ba95ac911e8486498b33f6c89307320.jpg" width="2" height="1" layout="responsive" alt="Image_20240220175039_11zon.jpg"></amp-img>
+                                </a>
+                                <a href="https://t.ly/vso777">
+                                    <amp-img src="https://sgalabel.blob.core.windows.net/websites/medialibrary/images/6ba82d99f9da4a5a869bcbf96e9fe5e1.jpg" width="2" height="1" layout="responsive" alt="imgpsh_fullsize_anim.jpg"></amp-img>
+                                </a>
+                        </amp-carousel>
+                    </div>
+                    <div class="container-login-register">
+                        <div class="login-head-button">
+                            <a href="https://t.ly/vso777">
+                                <p>Masuk</p>
+                            </a>
+                        </div>
+                        <div class="register-head-button">
+                            <a href="https://t.ly/vso777">
+                                <p>Daftar</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container-menu-icon">
+                        <div class="menu-icon">
+                            <a href="https://t.ly/vso777">
+                                <div class="icon-item">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/website/Themes/Robotic/Mobile/Contents/Images/Dark/MainMenu/ic_slot.png" width="1" height="1" layout="responsive" alt="SLOTS"></amp-img>
+                                    <p>SLOTS</p>
+                                </div>
+                            </a>
+                            <a href="https://t.ly/vso777">
+                                <div class="icon-item">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/website/Themes/Robotic/Mobile/Contents/Images/Dark/MainMenu/ic_casino.png" width="1" height="1" layout="responsive" alt="LIVECASINO"></amp-img>
+                                    <p>LIVECASINO</p>
+                                </div>
+                            </a>
+                            <a href="https://t.ly/vso777">
+                                <div class="icon-item">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/website/Themes/Robotic/Mobile/Contents/Images/Dark/MainMenu/ic_sport.png" width="1" height="1" layout="responsive" alt="SPORTS"></amp-img>
+                                    <p>SPORTS</p>
+                                </div>
+                            </a>
+                            <a href="https://t.ly/vso777">
+                                <div class="icon-item">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/website/Themes/Robotic/Mobile/Contents/Images/Dark/MainMenu/ic_fishing.png" width="1" height="1" layout="responsive" alt="FISHING"></amp-img>
+                                    <p>FISHING</p>
+                                </div>
+                            </a>
+                            <a href="https://t.ly/vso777">
+                                <div class="icon-item">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/website/Themes/Robotic/Mobile/Contents/Images/Dark/MainMenu/ic_gaming.png" width="1" height="1" layout="responsive" alt="E-Kasino"></amp-img>
+                                    <p>E-Kasino</p>
+                                </div>
+                            </a>
+                            <a href="https://t.ly/vso777">
+                                <div class="icon-item">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/website/Themes/Robotic/Mobile/Contents/Images/Dark/MainMenu/ic_other.png" width="1" height="1" layout="responsive" alt="GAMES"></amp-img>
+                                    <p>GAMES</p>
+                                </div>
+                            </a>
+                            <a href="https://t.ly/vso777">
+                                <div class="icon-item">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/website/Themes/Robotic/Mobile/Contents/Images/Dark/MainMenu/ic_esports.png" width="1" height="1" layout="responsive" alt="E-SPORTS"></amp-img>
+                                    <p>E-SPORTS</p>
+                                </div>
+                            </a>
+                            <a href="https://t.ly/vso777">
+                                <div class="icon-item">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/website/Themes/Robotic/Mobile/Contents/Images/Dark/MainMenu/ic_lotto.png" width="1" height="1" layout="responsive" alt="TOGEL"></amp-img>
+                                    <p>TOGEL</p>
+                                </div>
+                            </a>
+                            <a href="https://t.ly/vso777">
+                                <div class="icon-item">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/website/Themes/Robotic/Mobile/Contents/Images/Dark/MainMenu/ic_promo.png" width="1" height="1" layout="responsive" alt="Promosi"></amp-img>
+                                    <p>Promosi</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-hot-games">
+                    <p class="title-hot-games">Hot Games</p>
+                    <amp-carousel width="2" height="1" layout="responsive" type="slides" role="region" autoplay delay="2000">
+                            <a href="https://t.ly/vso777">
+                                <div class="game">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/1/medialibrary/images/1_80497a22887949f093384a0d9e963f78.png" width="1" height="1" layout="responsive" alt="Gates of Olympus"></amp-img>
+                                    <div class="btn-play">Main Sekarang</div>
+                                </div>
+                            </a>
+                            <a href="https://t.ly/vso777">
+                                <div class="game">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/1/medialibrary/images/1_ebb1ad50773544749a56912c37c266e8.png" width="1" height="1" layout="responsive" alt="Mahjong Ways 2"></amp-img>
+                                    <div class="btn-play">Main Sekarang</div>
+                                </div>
+                            </a>
+                            <a href="https://t.ly/vso777">
+                                <div class="game">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/1/medialibrary/images/1_213bf2d86e03404ead041d2f83d3f9d3.png" width="1" height="1" layout="responsive" alt="Mahjong Ways"></amp-img>
+                                    <div class="btn-play">Main Sekarang</div>
+                                </div>
+                            </a>
+                            <a href="https://t.ly/vso777">
+                                <div class="game">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/website/Themes/Robotic/Mobile/Contents/Images/Dark/Provider/ic_sga.png" width="1" height="1" layout="responsive" alt="Gates of Olympus 1000"></amp-img>
+                                    <div class="btn-play">Main Sekarang</div>
+                                </div>
+                            </a>
+                            <a href="https://t.ly/vso777">
+                                <div class="game">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/1/medialibrary/images/1_6f278e37945d4f608b59f5a73c53c837.png" width="1" height="1" layout="responsive" alt="Starlight Princess"></amp-img>
+                                    <div class="btn-play">Main Sekarang</div>
+                                </div>
+                            </a>
+                            <a href="https://t.ly/vso777">
+                                <div class="game">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/1/medialibrary/images/1_da80962d703e4bffa61cd9d08cbbd918.png" width="1" height="1" layout="responsive" alt="Starlight Princess 1000"></amp-img>
+                                    <div class="btn-play">Main Sekarang</div>
+                                </div>
+                            </a>
+                            <a href="https://t.ly/vso777">
+                                <div class="game">
+                                    <amp-img src="https://sgacdn.azureedge.net/agent-websites/1/medialibrary/images/1_cf1e2d47303b4a5788c5c5b67ac5a4e1.png" width="1" height="1" layout="responsive" alt="Sweet Bonanza"></amp-img>
+                                    <div class="btn-play">Main Sekarang</div>
+                                </div>
+                            </a>
+                    </amp-carousel>
+                </div>
+            </div>
+            <div class="footer">
+                <hr>
+                <div class="container">
+                    <div>
+                        <h1>VSO777 Agen Live Casino Bandar Bola Online dan Judi Online</h1>
+                        <h2>VSO777 | Agen Live Casino | Judi Bola Online | Bandar Togel | Situs Judi Poker Online | DominoQQ Terpercaya</h2>
+                        <h3>
+                            VSO777 adalah Situs Agen Bola SBOBET terpercaya untuk permainan Judi Taruhan Bola SBOBET, Poker, berbagai macam Live Casino, Bandar Togel Serta Judi Slot Online Games Online dengan menggunakan uang asli. Segera daftarkan diri Anda.
+                        </h3>
+                        <h2>Situs Live Casino Online Android &amp; iOS</h2>
+                        <h3>
+                            Semua Permainan di VSO777 bisa Anda mainkan baik di PC, smartphone Android dan iOS Anda. Sehingga Anda bisa bermain dimanapun dan kapanpun tanpa takut Anda tidak bisa login. Cukup login di website Agen Live Casino VSO777, masukkan
+                            user ID dan password anda , maka anda sudah siap bermain.
+                        </h3>
+                    </div>
+                </div>
+                <hr>
+                <div class="copyright-style">
+                    &#169 VSO777
+                </div>
+            </div>
+        </div>
+        <div class="container-nav">
+            <div class="col bottom-menu-home">
+                <a href="https://t.ly/vso777">
+                    <i class="fas fa-home"></i>
+                    <p>Home</p>
+                </a>
+            </div>
+            <div class="col bottom-menu-promo">
+                <a href="https://t.ly/vso777">
+                    <i class="fas fa-gift"></i>
+                    <p>Promosi</p>
+                </a>
+            </div>
+            <div class="col bottom-menu-contactus">
+                <a href="https://t.ly/vso777">
+                    <i class="fas fa-phone"></i>
+                    <p>Hubungi Kami</p>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://t.ly/vso777">
+                    <i class="fas fa-comment-dots"></i>
+                    <p>LiveChat</p>
+                </a>
+            </div>
+        </div>
+        <div id="pageLoading" class="container-loader circle96">
+            <div data-name="msg"></div>
+        </div>
+    </div>
+
+        </body>
+        </html>
